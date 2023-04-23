@@ -2,7 +2,7 @@ import axios from 'axios';
 import jwt_decode from "jwt-decode";
 
 
-axios.defaults.baseURL = 'http://localhost:5180';
+axios.defaults.baseURL = process.env.REACT_APP_VARIABLE_NAME;
 const STORAGE_KEY = 'access_token';
 // const apiUrl = "http://localhost:5180"
 axios.interceptors.response.use(
