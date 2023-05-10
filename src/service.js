@@ -1,8 +1,9 @@
 import axios from 'axios';
 import jwt_decode from "jwt-decode";
 
-
-axios.defaults.baseURL = process.env.REACT_APP_VARIABLE_NAME;
+// axios.defaults.baseURL = process.env.REACT_APP_VARIABLE_NAME;
+axios.defaults.baseURL = "https://todolist-server-p9z9.onrender.com";
+console.log(process.env.REACT_APP_VARIABLE_NAME,"fghj")
 const STORAGE_KEY = 'access_token';
 // const apiUrl = "http://localhost:5180"
 axios.interceptors.response.use(
